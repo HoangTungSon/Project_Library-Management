@@ -23,8 +23,12 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
+import source.service.BookConditionService;
 import source.service.BookService;
+import source.service.CategoryService;
+import source.service.impl.BookConditionServiceImpl;
 import source.service.impl.BookServiceImpl;
+import source.service.impl.CategoryServiceImpl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -51,6 +55,14 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return new BookServiceImpl();
     }
 
+    @Bean
+    public BookConditionService bookConditionService() { return new BookConditionServiceImpl();
+    }
+
+    @Bean
+    public CategoryService categoryService() {
+        return new CategoryServiceImpl();
+    }
     //Thymeleaf Configuration
     @Bean
     public SpringResourceTemplateResolver templateResolver(){
