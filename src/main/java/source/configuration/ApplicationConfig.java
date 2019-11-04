@@ -23,6 +23,8 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
+import source.service.BookService;
+import source.service.impl.BookServiceImpl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -42,6 +44,11 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
+    }
+
+    @Bean
+    public BookService bookService(){
+        return new BookServiceImpl();
     }
 
     //Thymeleaf Configuration
