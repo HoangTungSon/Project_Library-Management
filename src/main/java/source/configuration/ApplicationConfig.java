@@ -70,6 +70,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return new OccupationServiceImpl();
     }
 
+    @Bean
+    public BookBorrowerService bookBorrowerService() {
+        return new BookBorrowerServiceImpl();
+    }
     //Thymeleaf Configuration
     @Bean
     public SpringResourceTemplateResolver templateResolver(){

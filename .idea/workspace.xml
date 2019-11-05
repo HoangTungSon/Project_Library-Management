@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4acf34fc-0d39-41ec-8a80-c96d07047d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/model/Book_Borrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/repository/BookBorrowerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/service/BookBorrowerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/BookBorrowerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/source/model/Book_Borrower_id.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,57 +11,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/controller/BookConditionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/controller/BookConditionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/configuration/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/configuration/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/controller/BorrowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/controller/BorrowerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/controller/CategoryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/controller/OccupationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/controller/OccupationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Book_condition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Borrower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Occupation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/repository/BookConditionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/repository/BookConditionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/repository/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/repository/BorrowerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/repository/BorrowerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/repository/CategoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/repository/OccupationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/repository/OccupationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/BookConditionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/BookConditionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/BorrowerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/BorrowerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/OccupationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/OccupationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BookConditionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BookConditionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BookServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BorrowerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BorrowerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/OccupationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/OccupationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Book_Borrower.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/model/Book_Borrower.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/Library_Management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Library_Management-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/BookConditionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/BookConditionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/BorrowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/BorrowerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/OccupationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/OccupationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Book_condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/book/Book_condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/borrower/Borrower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/book/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Occupation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/borrower/Occupation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/BookConditionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/BookConditionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/BorrowerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/BorrowerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/OccupationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/OccupationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/BookConditionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/BookConditionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/BorrowerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/BorrowerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/OccupationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/OccupationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/BookConditionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/BookConditionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/BorrowerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/BorrowerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/OccupationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/OccupationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/configuration/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/configuration/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/BookBorrowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/BookBorrowerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Book_Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/Book_Borrower.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +166,7 @@
       <workItem from="1572926271406" duration="121000" />
       <workItem from="1572926555709" duration="93000" />
       <workItem from="1572927081743" duration="3028000" />
-      <workItem from="1572932221814" duration="3611000" />
+      <workItem from="1572932221814" duration="4726000" />
     </task>
     <servers />
   </component>

@@ -10,11 +10,10 @@ import java.io.Serializable;
 @Table(name = "book_borrower")
 public class Book_Borrower implements Serializable {
 
-    @Id
-    @ManyToOne
+
+    @JoinColumn(name = "book_id")
     private Borrower borrower_id;
 
-    @Id
     @ManyToOne
     private Book book_id;
 
