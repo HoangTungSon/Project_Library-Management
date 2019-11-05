@@ -18,6 +18,10 @@ public class Book {
 
     private String pub_date;
 
+    private Long categoryId;
+
+    private Long bookConditionId;
+
     @JsonIgnore
     @ManyToOne
     private Category category;
@@ -40,6 +44,16 @@ public class Book {
         this.title = title;
         this.publisher = publisher;
         this.pub_date = pub_date;
+        this.category = category;
+        this.book_condition = book_condition;
+    }
+
+    public Book(String title, String publisher, String pub_date, Long categoryId, Long bookConditionId, Category category, Book_condition book_condition) {
+        this.title = title;
+        this.publisher = publisher;
+        this.pub_date = pub_date;
+        this.categoryId = categoryId;
+        this.bookConditionId = bookConditionId;
         this.category = category;
         this.book_condition = book_condition;
     }
@@ -90,5 +104,21 @@ public class Book {
 
     public void setBook_condition(Book_condition book_condition) {
         this.book_condition = book_condition;
+    }
+
+    public Long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Long getBookConditionId() {
+        return bookConditionId;
+    }
+
+    public void setBookConditionId(Long bookConditionId) {
+        this.bookConditionId = bookConditionId;
     }
 }

@@ -14,4 +14,24 @@ public class BookConditionServiceImpl implements BookConditionService {
     public Iterable<Book_condition> findAll() {
         return bookConditionRepository.findAll();
     }
+
+    @Override
+    public Book_condition findById(Long id) {
+        return bookConditionRepository.findOne(id);
+    }
+
+    @Override
+    public void save(Book_condition book_condition) {
+bookConditionRepository.save(book_condition);
+    }
+
+    @Override
+    public void delete(Long id) {
+bookConditionRepository.delete(id);
+    }
+
+    @Override
+    public Iterable<Book_condition> findAllByStatusContaining(String status) {
+        return bookConditionRepository.findAllByStatusContaining(status);
+    }
 }

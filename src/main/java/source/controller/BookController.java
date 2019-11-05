@@ -10,7 +10,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 import source.model.Book;
+import source.model.Book_condition;
+import source.model.Category;
+import source.service.BookConditionService;
 import source.service.BookService;
+import source.service.CategoryService;
 
 import java.util.List;
 
@@ -20,6 +24,12 @@ public class BookController {
 
     @Autowired
     private BookService bookService;
+
+    @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
+    private BookConditionService bookConditionService;
 
 
     //-------------------Retrieve All Books--------------------------------------------------------
@@ -48,9 +58,15 @@ public class BookController {
 
     //-------------------Create a Book--------------------------------------------------------
 
-    @RequestMapping(value = "/books/", method = RequestMethod.POST)
+    @RequestMapping(value = "/books", method = RequestMethod.POST)
     public ResponseEntity<Void> createBook(@RequestBody() Book book, UriComponentsBuilder ucBuilder) {
         System.out.println("Creating Book " + book.getTitle());
+
+        Category category = categoryService.findById(book.getCategoryId());
+        Book_condition book_condition = bookConditionService.findById(book.getBookConditionId());
+
+        book.setCategory(category);
+        book.setBook_condition(book_condition);
 
         bookService.save(book);
 
@@ -75,8 +91,8 @@ public class BookController {
         book1.setPub_date(book.getPub_date());
         book1.setPublisher(book.getPublisher());
         book1.setId(book.getId());
-        book1.setCategory(book.getCategory());
-        book1.setBook_condition(book.getBook_condition());
+        book1.setCategory(categoryService.findById(book.getCategoryId()));
+        book1.setBook_condition(bookConditionService.findById(book.getBookConditionId()));
 
         bookService.save(book1);
         return new ResponseEntity<>(book1, HttpStatus.OK);
