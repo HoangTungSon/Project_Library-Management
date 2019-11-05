@@ -1,6 +1,6 @@
 package source.service;
 
-import source.model.Borrower;
+import source.model.borrower.Borrower;
 
 public interface BorrowerService {
     Iterable<Borrower> findAll();

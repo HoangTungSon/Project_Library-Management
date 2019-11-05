@@ -1,7 +1,7 @@
 package source.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import source.model.Category;
+import source.model.book.Category;
 import source.repository.CategoryRepository;
 import source.service.CategoryService;
 

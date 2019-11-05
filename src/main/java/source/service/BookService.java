@@ -1,6 +1,6 @@
 package source.service;
 
-import source.model.Book;
+import source.model.book.Book;
 
 public interface BookService {
 

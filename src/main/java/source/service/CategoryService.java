@@ -1,6 +1,6 @@
 package source.service;
 
-import source.model.Category;
+import source.model.book.Category;
 
 public interface CategoryService {
     Iterable<Category> findAll();

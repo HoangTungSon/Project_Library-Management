@@ -1,11 +1,9 @@
 package source.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import source.model.Book;
+import source.model.book.Book;
 import source.repository.BookRepository;
 import source.service.BookService;
-
-import java.util.List;
 
 public class BookServiceImpl implements BookService {
 

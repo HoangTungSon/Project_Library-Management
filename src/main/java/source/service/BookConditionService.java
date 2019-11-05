@@ -1,6 +1,6 @@
 package source.service;
 
-import source.model.Book_condition;
+import source.model.book.Book_condition;
 
 public interface BookConditionService {
 

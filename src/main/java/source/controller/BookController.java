@@ -9,11 +9,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-import source.model.Book;
-import source.model.Book_condition;
-import source.model.Category;
+import source.model.book.Book;
+import source.model.book.Book_condition;
+import source.model.book.Category;
 import source.service.BookConditionService;
 import source.service.BookService;
+import source.service.BorrowerService;
 import source.service.CategoryService;
 
 import java.util.List;
@@ -30,6 +31,9 @@ public class BookController {
 
     @Autowired
     private BookConditionService bookConditionService;
+
+    @Autowired
+    private BorrowerService borrowerService;
 
 
     //-------------------Retrieve All Books--------------------------------------------------------
@@ -113,4 +117,5 @@ public class BookController {
         bookService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
 }

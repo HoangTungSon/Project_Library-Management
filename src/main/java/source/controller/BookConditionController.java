@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import source.model.Book;
-import source.model.Book_condition;
+import source.model.book.Book_condition;
 import source.service.BookConditionService;
 
 import java.util.List;

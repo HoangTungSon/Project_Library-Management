@@ -1,7 +1,6 @@
 package source.service;
 
-import source.model.Borrower;
-import source.model.Occupation;
+import source.model.borrower.Occupation;
 
 public interface OccupationService {
 

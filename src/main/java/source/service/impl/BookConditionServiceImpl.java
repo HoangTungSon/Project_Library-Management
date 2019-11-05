@@ -1,7 +1,7 @@
 package source.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import source.model.Book_condition;
+import source.model.book.Book_condition;
 import source.repository.BookConditionRepository;
 import source.service.BookConditionService;
 

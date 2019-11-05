@@ -1,7 +1,7 @@
 package source.repository;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
-import source.model.Borrower;
+import source.model.borrower.Borrower;
 
 public interface BorrowerRepository extends PagingAndSortingRepository<Borrower, Long> {
 

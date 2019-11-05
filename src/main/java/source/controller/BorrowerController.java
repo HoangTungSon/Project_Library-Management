@@ -7,13 +7,16 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-import source.model.Borrower;
-import source.model.Occupation;
+import source.model.book.Book;
+import source.model.borrower.Borrower;
+import source.model.borrower.Occupation;
 import source.service.BorrowerService;
 import source.service.OccupationService;
 
 import java.util.List;
+import java.util.Set;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class BorrowerController {
 
@@ -100,4 +103,19 @@ public class BorrowerController {
         borrowerService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+//    @PatchMapping("/borrowers/{id}/book")
+//    public ResponseEntity<Borrower> borrowBook(@RequestBody Borrower borrower, @PathVariable("id") Long id){
+//
+//        Borrower borrower1 = borrowerService.findById(id);
+//        if (borrower1 == null) {
+//            System.out.println("Book with id " + id + " not found");
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//
+//        borrower1.setBookSet(borrower.getBookSet());
+//        borrowerService.save(borrower1);
+//
+//        return new ResponseEntity<>(borrower1, HttpStatus.OK);
+//    }
 }

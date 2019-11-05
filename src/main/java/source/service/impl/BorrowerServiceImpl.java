@@ -1,7 +1,7 @@
 package source.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import source.model.Borrower;
+import source.model.borrower.Borrower;
 import source.repository.BorrowerRepository;
 import source.service.BorrowerService;
 
